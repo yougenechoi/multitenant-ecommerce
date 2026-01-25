@@ -6,7 +6,7 @@ export const GET = async (request: Request) => {
     config: configPromise,
   });
 
-  const data = await payload.find({ collection: "users" });
+  const data = await payload.find({ collection: "categories" });
 
   return Response.json(data);
 };
