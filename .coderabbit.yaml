@@ -1,0 +1,18 @@
+# .coderabbit.yaml
+language: en-US
+early_access: true
+reviews:
+  profile: chill # or "assertive" for more detailed reviews
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+  tools:
+    github-checks:
+      timeout: 90
+chat:
+  auto_reply: true
