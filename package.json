@@ -10,9 +10,9 @@
     "generate:types": "PAYLOAD_CONFIG_PATH=payload.config.ts payload generate:types",
     "db:fresh": "payload migrate:fresh",
     "db:seed": "bun run seed.ts",
-    "db:reset": "bun run db:fresh && bun run db:seed", 
+    "db:reset": "bun run db:fresh && bun run db:seed",
     "db:seedd": "node --import tsx seed.ts",
-    "db:resett": "bun run db:fresh && bun run db:seedd" 
+    "db:resett": "bun run db:fresh && bun run db:seedd"
   },
   "type": "module",
   "dependencies": {
@@ -71,6 +71,7 @@
     "recharts": "2.15.4",
     "server-only": "^0.0.1",
     "sonner": "^2.0.7",
+    "superjson": "^2.2.6",
     "tailwind-merge": "^3.4.0",
     "vaul": "^1.1.2",
     "zod": "^4.3.6"
