@@ -5,6 +5,8 @@ import { useTRPC } from "@/trpc/client";
 
 export default function Home() {
   const trpc = useTRPC();
-  const categories = useQuery(trpc.categories.getMany.queryOptions());
-  return <div className="home-container">home</div>;
+  const { data } = useQuery(trpc.auth.session.queryOptions());
+  return (
+    <div className="home-container">{JSON.stringify(data?.user, null, 2)}</div>
+  );
 }
