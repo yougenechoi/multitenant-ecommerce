@@ -1,1 +1,1 @@
-export const DEFAULT_TAG_LIMIT = 10;
+export const DEFAULT_TAG_LIMIT = 8;
