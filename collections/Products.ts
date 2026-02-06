@@ -10,7 +10,11 @@ export const Products: CollectionConfig = {
       return Boolean(tenant?.stripeDetailsSubmitted);
     },
   },
-  admin: { useAsTitle: "name" },
+  admin: {
+    useAsTitle: "name",
+    description:
+      "You must verify your stripe account before creating products.",
+  },
   fields: [
     { name: "name", type: "text", required: true },
     { name: "description", type: "text" },
