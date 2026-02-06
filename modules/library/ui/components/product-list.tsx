@@ -6,7 +6,6 @@ import { ProductCard, ProductCardSkeleton } from "./product-cards";
 import { DEFAULT_LIMIT } from "@/constant";
 import { Button } from "@/components/ui/button";
 import { InboxIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export const ProductList = () => {
   const trpc = useTRPC();
