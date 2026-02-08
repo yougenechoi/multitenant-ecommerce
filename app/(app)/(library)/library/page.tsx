@@ -7,6 +7,8 @@ import {
   infiniteQueryOptions,
 } from "@tanstack/react-query";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   const queryClient = getQueryClient();
   void queryClient.prefetchInfiniteQuery(
