@@ -63,7 +63,7 @@ export default buildConfig({
   plugins: [
     payloadCloudPlugin(),
     multiTenantPlugin<Config>({
-      collections: { products: {}, media: {} },
+      collections: { products: {} },
       tenantsArrayField: { includeDefaultField: false },
       userHasAccessToAllTenants: (user) => isSuperAdmin(user),
     }),
